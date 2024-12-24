@@ -1,4 +1,4 @@
-package aquariux.trade.app.trade.app;
+package com.aquariux.trade.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

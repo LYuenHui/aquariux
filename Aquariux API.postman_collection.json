@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "1437a4b5-595e-481f-91da-fc67d29aa719",
+		"name": "Aquariux API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18806581"
+	},
+	"item": [
+		{
+			"name": "price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/aquariux/price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aquariux",
+						"price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\" :\"trader1\",\n    \"cryptoPair\" :\"BTCUSDT\",\n    \"orderType\" :\"BUY\",\n    \"quantity\" : \"0.1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/aquariux/transact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aquariux",
+						"transact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transact history",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\" :\"trader1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/aquariux/transact/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aquariux",
+						"transact",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\" :\"trader1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/aquariux/transact/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aquariux",
+						"transact",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
